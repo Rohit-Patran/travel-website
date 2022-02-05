@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F7F7F7">
+    <link rel="shortcut icon" href="../images/airplane.gif" type="image/x-icon">
+    <link rel="stylesheet" href="./payment.css">
+    <title>Travel Hub | Payment</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Payment To Confirm Booking</h1>
+        <form class="form-content" action="/">
+            <input type="text"  placeholder="Card Number">
+            <input type="text"  placeholder="Card Holder Name">
+            <label for="form-input-container">Card Expiry date</label>
+            <span class="form-input-container">
+                <input type="text" class="expiry" placeholder="MM">
+                <input type="text" class="expiry" placeholder="YY">
+            </span>
+            <input type="password" name="" id="" placeholder="cvv">
+            <span class="form-button-container">
+                <button>Pay</button>
+                <button onclick="window.location.href='/pages/booking.html'">Cancel</button>
+            </span>
+        </form>
+    </div>
+    <script src="/payment/payment.js"></script>
+</body>
+</html>

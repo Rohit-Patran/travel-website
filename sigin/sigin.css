@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    background:linear-gradient(to bottom ,dodgerblue,lightblue);
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 20%;
+    padding: 2rem;
+    background-color: #F7F7F7;
+    border-radius: 0.5rem;
+}
+
+input{
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+.form-input-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+select{
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+.form-button-container{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 0.5rem;
+}
+
+button{
+    width: 50%;
+    background-color: dodgerblue;
+    color: #F7F7F7;
+    outline: none;
+    border: solid dodgerblue 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.form-input-container input{
+    width: 50%;
+}
+
+.forgot-password{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.reset-password{
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: #F7F7F7;
+    border-radius: 0.5rem;
+    border:solid dodgerblue 0.5rem;
+}
+
+.error{
+    border: red solid 0.2rem;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+.success{
+    border: green solid 0.2rem;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+.error::placeholder{
+    color: red;
+}
+.success::placeholder{
+    color: green;
+}
+
+
+@media screen and (max-width:769px) and (min-width:428px) {
+
+    .navbar{
+        flex-direction: column;
+        position: fixed;
+    }
+    .form-container h1{
+        padding-top: 15rem;
+    }
+    .form-content{
+        width: 50%;
+    }
+
+    .forgot-password{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .reset-password{
+        width: fit-content;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width:427px) {
+
+    .navbar{
+        flex-direction: column;
+        position: fixed;
+    }
+    .form-container h1{
+        padding-top: 15rem;
+    }
+    .form-content{
+        width: 70%;
+    }
+
+    .forgot-password{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    .reset-password{
+        width: fit-content;
+        margin: 0 auto;
+        display: block;
+    }
+}
